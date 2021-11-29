@@ -7,7 +7,7 @@ function Start() {
         <div>
           <h1>Pete Schroeder</h1>
         </div>
-        <a href="https://www.linkedin.com/in/peteschroeder/">LinkedIn</a>
+        <p>More info at <a href="https://www.linkedin.com/in/peteschroeder/">LinkedIn</a></p>
       </div>
     </div>
   );
