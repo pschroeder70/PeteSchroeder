@@ -10,16 +10,13 @@
   align-items: center;
   justify-content: center;
   color: white;
-}
-
-.start-header a {
-  color: #fff5ee;
-  target: 
-}
-
-.start-header a:hover {
-  color: #fff8dc;
-  text-decoration: none;
+  a {
+    color: #fff5ee;
+  }
+  a:hover {
+    color: #fff8dc;
+    text-decoration: none;
+  }
 }
 
 .start-header__name {
@@ -35,14 +32,12 @@
 
 .start-header__list-item {
   text-align: center;
-}
-
-.start-header__list-item:before {
-  content: '|';
-  padding: 0 1em;
-}
-
-.start-header__list-item:first-of-type:before {
-  content: '';
-  padding: 0;
+  &:before {
+    content: '|';
+    padding: 0 1em;
+  }
+  &:first-of-type:before {
+    content: '';
+    padding: 0;
+  }
 }

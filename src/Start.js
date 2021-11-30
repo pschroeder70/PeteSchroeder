@@ -1,4 +1,4 @@
-import './Start.css';
+import './Start.scss';
 
 function Start() {
   return (
