@@ -9,7 +9,6 @@ function Start() {
           <li className="start-header__list-item"><a href="https://www.linkedin.com/in/peteschroeder/">LinkedIn</a> </li>
           <li className="start-header__list-item"><a href="https://github.com/pschroeder70">GitHub</a> </li>
           <li className="start-header__list-item"><a href="https://codepen.io/PeteS">CodePen</a> </li>
-          <li className="start-header__list-item"><a href="https://letterboxd.com/4kFan/">Letterboxd</a></li>
         </ul>
       </div>
     </div>
