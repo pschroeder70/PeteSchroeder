@@ -19,6 +19,16 @@ body {
   width: 45vw;
   text-align: center;
 }
+@media screen and (max-width: 1250px) {
+  .card {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .card {
+    width: 85vw;
+  }
+}
 
 .card__name {
   background: var(--bottom-bg);
@@ -34,8 +44,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4em;
+  font-size: 4rem;
   color: #fff;
+}
+@media screen and (max-width: 750px) {
+  .card__name h1 {
+    font-size: 2rem;
+  }
 }
 
 .card__skills {
@@ -57,6 +72,12 @@ body {
   width: 100%;
   margin: 30px 0 0 0;
   padding: 0;
+}
+@media screen and (max-width: 750px) {
+  .card__skills-list {
+    flex-direction: column;
+    margin-top: 65px;
+  }
 }
 
 .card__skills-list-item {
