@@ -64,5 +64,11 @@ body {
   width: 100%;
   a {
     color: var(--main-bg);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: rgb(255, 0, 119);
+      text-decoration: initial;
+    }
   }
 }
