@@ -1,0 +1,113 @@
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 2rem auto auto auto 2rem;
+  grid-template-rows: repeat(5, auto);
+  width: 45vw;
+  text-align: center;
+  @media screen and (max-width: 1250px) {
+    width: 65vw;
+  }
+  @media screen and (max-width: 750px) {
+    width: 85vw;
+  }
+}
+
+.card__photo {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  img {
+    width: 200px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    box-shadow: var(--drop-shadow);
+  }
+}
+
+.card__name {
+  background: var(--bottom-bg);
+  border-radius: 0.5em;
+  box-shadow: var(--drop-shadow);
+  grid-column: 1 / -1;
+  grid-row: 3 / 5;
+  padding: 10px;
+
+  h1 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    @media screen and (max-width: 750px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.card__skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--top-bg);
+  border-radius: 0.3em;
+  box-shadow: var(--drop-shadow);
+  grid-column: 2 / 5;
+  grid-row: 4 / 6;
+  padding: 2em 1em 1em;
+}
+
+.card__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 0;
+
+  @media screen and (max-width: 750px) {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+.card__skills-list-item {
+  padding: 0 5px;
+  a {
+    color: var(--main-bg);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: var(--link-hover);
+      text-decoration: initial;
+    }
+  }
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-column: 1 / 5;
+  grid-row: 7 / 7;
+  margin: 15px;
+  width: 100%;
+}
+
+.badges__icon {
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  @media screen and (max-width: 750px) {
+    margin: 5px 10px;
+  }
+}
